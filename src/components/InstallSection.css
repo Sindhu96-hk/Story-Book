@@ -1,0 +1,46 @@
+.home__install-section{
+    padding: 50px 0;
+}
+
+.home__hero-row{
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap;
+    align-content: stretch;
+    text-align: center;
+}
+
+.col {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-left: 15px;
+    max-width: 100%;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.home__home-text-wrapper {
+    /* max-width: 540px; */
+    padding-top: 0;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+
+.install-heading {
+     margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: black;
+    text-align: left;
+    white-space: pre-line;
+}
+
+
