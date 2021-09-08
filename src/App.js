@@ -16,6 +16,12 @@ import Testimonial2 from './components/pages/HomePage/Testimonial2';
 import Install from './components/pages/HomePage/Install';
 import Tutorial from './components/pages/HomePage/Tutorial';
 import Footer from './components/pages/Footer/Footer';
+import Doc from './components/Doc';
+import Tutorials from './components/Tutorials';
+import Releases from './components/Releases';
+import Addons from './components/Addons';
+import Blog from './components/Blog';
+import Community from './components/Community';
 
 
 
@@ -24,22 +30,29 @@ function App() {
     <Router>
         <Navbar />
         <Switch>
-          <Route path='/' exact component={Home} />   
-        </Switch>
-        <Route path='/' exact component={ResponsivePlayer} />
-          <Route path='/' exact component={Work} />
-          <Route path='/' exact component={Build} />
-          <Route path='/' exact component={Testimonial} />
-          <Route path='/' exact component={Test} />
-          <Route path='/' exact component={Spottest} />
-          <Route path='/' exact component={Testimonial1} />
-          <Route path='/' exact component={Document} />
-          <Route path='/' exact component={Feedback} />
-          <Route path='/' exact component={Testimonial2} />
-          <Route path='/' exact component={Install} />
-          <Route path='/' exact component={Tutorial} />
-       
-        <Switch>
+          <Route path='/' exact >
+            <>   
+              <Home></Home>
+              <ResponsivePlayer></ResponsivePlayer>
+              <Work></Work>
+              <Build></Build>
+              <Testimonial></Testimonial>
+              <Test></Test>
+              <Spottest></Spottest>
+              <Testimonial1></Testimonial1>
+              <Document></Document>
+              <Feedback></Feedback>
+              <Testimonial2></Testimonial2>
+              <Install></Install>
+              <Tutorial></Tutorial>
+            </>
+          </Route>     
+          <Route path='/Doc' exact component={Doc} />    
+          <Route path='/Tutorials' exact component={Tutorials} /> 
+          <Route path='/Releases' exact component={Releases} />
+          <Route path='/Addons' exact component={Addons} />
+          <Route path='/Blog' exact component={Blog} /> 
+          <Route path='/Community' exact component={Community} />   
           <Route path='/' exact component={Footer} />
         </Switch>
        

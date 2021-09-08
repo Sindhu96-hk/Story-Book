@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MdFingerprint} from 'react-icons/md';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Button } from './Button';
 import './Navbar.css';
@@ -28,7 +27,6 @@ function Navbar() {
             <div className="navbar">
                 <div className="navbar-container container">
                     <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
-                        {/* <MdFingerprint className='navbar-icon' /> */}
                         <img src="images/storybook.svg" alt=""/>
                     </Link>
                     <div className="menu-icon" onClick={handleClick} >
@@ -36,12 +34,12 @@ function Navbar() {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/doc' className='nav-links' onClick={closeMobileMenu}>
                                 Doc
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/tutorial' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/tutorials' className='nav-links' onClick={closeMobileMenu}>
                                 Tutorials
                             </Link>
                         </li>
