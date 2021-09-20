@@ -2,16 +2,15 @@ import React from 'react';
 import './Footer.css';
 import { Button } from '../../Button';
 import { Link } from 'react-router-dom';
-import { MdFingerprint } from 'react-icons/md';
+
 
 function Footer() {
   return (
     <div className='footer-container'>
-      <div className='footer-links'>
+    <div className='footer-links'>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
-              <img src="images/storybook.svg"></img>
-            {/* <h2>About Us</h2> */}
+              <img src="images/storybook.svg" alt="storybook"></img>
             <p className="footer-subscription-text">The MIT License (MIT). Website design by @domyen and the awesome Storybook community.</p>
           </div>
           <div className='footer-link-items'>
@@ -36,49 +35,47 @@ function Footer() {
             <Link to='/'>Youtube</Link>
           </div>
           <div className='footer-link-items '>
-          <h2>Subscribe</h2>
-          <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
-        </p>
-            <div className='input-areas'>
-                    <form>
-                        <input
-                        className='footer-input'
-                        name='email'
-                        type='email'
-                        placeholder='Your Email'
-                        />
-                        <Button buttonStyle='btn--outline'>Subscribe</Button>
-                    </form>
-            </div>
+              <h2>Subscribe</h2>
+              <p className='footer-subscription-text'>
+              You can unsubscribe at any time.
+              </p>
+              <div className='input-areas'>
+                      <form>
+                          <input
+                          className='footer-input'
+                          name='email'
+                          type='email'
+                          placeholder='Your Email'
+                          />
+                          <Button buttonStyle='btn--outline'>Subscribe</Button>
+                      </form>
+              </div>
           </div>
         </div>
+  </div>
+  <section className='social-media'>
+    <div className='social-media-wrap'>
+      <div className='footer-logo'>
+          <small className="website-rights"><p>Maintained by</p></small>
+        <Link to='/' className='social-logo'>
+          <img src="images/cromatic.svg" alt="cromatic" height="40px"/ > 
+        </Link>
       </div>
-     
-      <section className='social-media'>
-        <div className='social-media-wrap'>
-          <div className='footer-logo'>
-              <small className="website-rights"><p>Maintained by</p></small>
-            <Link to='/' className='social-logo'>
-              <img src="images/cromatic.svg" height="40px"/ >
-              
-            </Link>
-          </div>
-          <div className='footer-logo'>
-          <small className='website-rights'>
-               <p>Continuous integration by</p> 
-               <img src="images/circle.svg"  height="40px"/>
-           </small>
-           </div>
-           <div className='footer-logo'>
-           <small className='website-rights'>  <p>Hosting by</p></small> 
-          <img src="images/netlify.svg"  height="40px"/>
-            
-          </div>
-        </div>
-      </section>
+      <div className='footer-logo'>
+      <small className='website-rights'>
+          <p>Continuous integration by</p> 
+          <img src="images/circle.svg" alt="circle"  height="40px"/>
+      </small>
+      </div>
+      <div className='footer-logo'>
+      <small className='website-rights'>  <p>Hosting by</p></small> 
+      <img src="images/netlify.svg" alt="netlify" height="40px"/>
+        
+      </div>
     </div>
-  );
+  </section>
+</div>
+  )
 }
 
 export default Footer;

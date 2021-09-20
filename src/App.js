@@ -2,26 +2,26 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
-import Home from './components/pages/HomePage/Home';
+import Home from './components/Home/Home';
 import ResponsivePlayer from './components/video/ResponsivePlayer';
-import Work from './components/pages/HomePage/Work';
-import Build from './components/pages/HomePage/Build';
-import Testimonial from './components/pages/HomePage/Testimonial';
-import Test from './components/pages/HomePage/Test';
-import Spottest from './components/pages/HomePage/Spottest';
-import Testimonial1 from './components/pages/HomePage/Testimonial1';
-import Document from './components/pages/HomePage/Document';
-import Feedback from './components/pages/HomePage/Feedback';
-import Testimonial2 from './components/pages/HomePage/Testimonial2';
-import Install from './components/pages/HomePage/Install';
-import Tutorial from './components/pages/HomePage/Tutorial';
+import Work from './components/Work/Work';
+import Build from './components/Build/Build';
+import Testimonial from './components/Testimonial/Testimonial';
+import Test from './components/Test/Test';
+import Spottest from './components/Spottest/Spottest';
+import Testimonial1 from './components/Testimonial1/Testimonial1';
+import Document from './components/Document/Document';
+import Feedback from './components/Feedback/Feedback';
+import Testimonial2 from './components/Testimonial2/Testimonial2';
+import Install from './components/Install/Install';
+import Tutorial from './components/Tutorial/Tutorial';
 import Footer from './components/pages/Footer/Footer';
-import Doc from './components/Doc';
-import Tutorials from './components/Tutorials';
-import Releases from './components/Releases';
-import Addons from './components/Addons';
-import Blog from './components/Blog';
-import Community from './components/Community';
+import Doc from './components/pages/Doc/Doc';
+import Tutorials from './components/pages/Tutorials/Tutorials';
+import Releases from './components/pages/Releases/Releases';
+import Addons from './components/pages/Addons/Addons';
+import Blog from './components/pages/Blog/Blog';
+import Community from './components/pages/Community/Community';
 
 
 
@@ -53,7 +53,7 @@ function App() {
           <Route path='/Addons' exact component={Addons} />
           <Route path='/Blog' exact component={Blog} /> 
           <Route path='/Community' exact component={Community} />   
-          <Route path='/' exact component={Footer} />
+          <Route path='/Footer' exact component={Footer} />
         </Switch>
        
     </Router>
