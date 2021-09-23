@@ -15,7 +15,6 @@ export default function App() {
       Country: ${country}
       Accepted Terms: ${acceptedTerms}
     `);
-    
     event.preventDefault();
   }
 
@@ -65,8 +64,8 @@ export default function App() {
           required />
         I accept the terms of service        
       </label>
-
+      
       <button className="submit">Submit</button>
-    </form>
+      </form>
   );
 }
